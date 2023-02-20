@@ -17,31 +17,39 @@ def main():
 
     # 月の日数を取得
     days = calendar.monthrange(year, month)[1]
+    # 最終日をdate型に変換
     last_day = datetime.date(year, month, days)
 
     # カレンダーを作成
     cal = calendar.monthcalendar(year, month)
-    # 次月の日数を取得
-    # 前月の日付を埋める
-    for _ in range(first_day.weekday() + 1):
-        cal[0].insert(0, prev_month_days)
-        prev_month_days -= 1
+    if first_day.weekday() != 6:
+        # 前月の日付を埋める
+        for _ in range(first_day.weekday() + 1):
+            cal[0].insert(0, prev_month_days)
+            prev_month_days -= 1
+    cals = []
+    # 0:月=5埋める,
+    # 1:火=4埋める,
+    # 2:水=3埋める,
+    # 3:木=2埋める,
+    # 4:金=1埋める,
+    # 5:土=0埋める,
+    # 6:日=6埋める
+    roop_range = 5 - last_day.weekday() if last_day.weekday() != 6 else last_day.weekday()
     # 次月の日付を埋める
-    for i in range(last_day.weekday() - 1):
+    for i in range(roop_range):
+        print(i + 1)
         cal[-1].append(i + 1)
     cals = []
     for week in cal:
         week = [i for i in week if i != 0]
         cals.append(week)
-
     # カレンダーを出力
     print("日  月  火  水  木  金  土")
     for week in cals:
         week = [i for i in week if i != 0]
         for day in week:
-            if day == 0:
-                continue
-            elif day > days:
+            if day > days:
                 print("{:2d} ".format(day), end=" ")
             elif day <= (31 if days >= 31 else 30):
                 print("{:2d} ".format(day), end=" ")
