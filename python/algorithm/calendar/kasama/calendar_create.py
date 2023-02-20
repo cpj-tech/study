@@ -1,6 +1,8 @@
 import datetime
 import calendar
 
+calendar.setfirstweekday(calendar.SUNDAY)
+
 
 def main():
 
@@ -12,6 +14,7 @@ def main():
     first_day = datetime.date(year, month, 1)
     # 前月の日数を取得
     prev_month_days = calendar.monthrange(year, month - 1)[1] if month != 1 else calendar.monthrange(year - 1, 12)[1]
+
     # 月の日数を取得
     days = calendar.monthrange(year, month)[1]
     last_day = datetime.date(year, month, days)
@@ -20,14 +23,13 @@ def main():
     cal = calendar.monthcalendar(year, month)
     # 次月の日数を取得
     # 前月の日付を埋める
-    for _ in range(first_day.weekday()):
+    for _ in range(first_day.weekday() + 1):
         cal[0].insert(0, prev_month_days)
         prev_month_days -= 1
     # 次月の日付を埋める
-    for i in range(last_day.weekday()):
+    for i in range(last_day.weekday() - 1):
         cal[-1].append(i + 1)
     cals = []
-
     for week in cal:
         week = [i for i in week if i != 0]
         cals.append(week)
