@@ -22,12 +22,21 @@ def main():
 
     # カレンダーを作成
     cal = calendar.monthcalendar(year, month)
-    if first_day.weekday() != 6:
-        # 前月の日付を埋める
-        for _ in range(first_day.weekday() + 1):
-            cal[0].insert(0, prev_month_days)
-            prev_month_days -= 1
+    # 前月の日付の埋め方
+    # 0:月=1埋める,
+    # 1:火=2埋める,
+    # 2:水=3埋める,
+    # 3:木=4埋める,
+    # 4:金=5埋める,
+    # 5:土=6埋める,
+    # 6:日=0埋める
+    roop_range = 1 + first_day.weekday() if first_day.weekday() != 6 else 0
+    # 前月の日付を埋める
+    for _ in range(roop_range):
+        cal[0].insert(0, prev_month_days)
+        prev_month_days -= 1
     cals = []
+    # 次月の日付けの埋め方
     # 0:月=5埋める,
     # 1:火=4埋める,
     # 2:水=3埋める,
