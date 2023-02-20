@@ -32,7 +32,6 @@ def main():
         week = [i for i in week if i != 0]
         cals.append(week)
 
-    print(cals)
     # カレンダーを出力
     print("日  月  火  水  木  金  土")
     for week in cals:
