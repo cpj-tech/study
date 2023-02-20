@@ -16,3 +16,22 @@
     - だたし、西暦が400で割り切れる年は絶対にうるう年である	
 - 作成したコードを説明して相手が理解できること。
 
+## 出力例
+
+
+```
+(base) kasamayoshiki@kasamakichitakanoMacBook-Pro kasama % python calendar_create.py
+西暦を入力してください: 2024
+月を入力してください: 2
+日  月  火  水  木  金  土
+29  30  31   1   2   3   4  
+ 5   6   7   8   9  10  11  
+12  13  14  15  16  17  18  
+19  20  21  22  23  24  25  
+26  27  28  29   1   2   3  
+(base) kasamayoshiki@kasamakichitakanoMacBook-Pro kasama % 
+```
+
+<img width="571" alt="Screenshot 2023-02-12 at 22 33 42" src="https://user-images.githubusercontent.com/61643054/219990570-d107a217-b8b1-4e4a-9a2a-4d5574cc42a6.png">
+
+
