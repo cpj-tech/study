@@ -35,3 +35,12 @@
 <img width="571" alt="Screenshot 2023-02-12 at 22 33 42" src="https://user-images.githubusercontent.com/61643054/219990570-d107a217-b8b1-4e4a-9a2a-4d5574cc42a6.png">
 
 
+## 公式
+
+フェアフィールドの公式
+
+西暦1年1月1日からの経過日数を求める計算式
+
+https://manabitimes.jp/math/999
+
+days(経過日数) = 31+28+365*(year-1)+year//4 - year//100 + year//400 + (306*(month+1)//10) -122 + day

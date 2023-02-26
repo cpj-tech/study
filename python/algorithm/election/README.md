@@ -16,7 +16,7 @@ vote = [
 
 ## 条件
 
-- pythonのlistのsort機能は使用禁止
+- 特になし
 
 
 ## 出力例
@@ -27,3 +27,7 @@ vote = [
 鈴木花子が過半数を取りました。
 (base) kasamayoshiki@kasamakichitakanoMacBook-Pro kasama % 
 ```
+
+## アルゴリズム
+
+ ボイヤーとムーアのレポート
