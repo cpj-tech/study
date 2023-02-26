@@ -23,11 +23,19 @@ vote = [
 
 
 ```
-(base) kasamayoshiki@kasamakichitakanoMacBook-Pro kasama % python calendar_create.py
+(base) kasamayoshiki@kasamakichitakanoMacBook-Pro kasama % python find_election_winner.py
 鈴木花子が過半数を取りました。
+(base) kasamayoshiki@kasamakichitakanoMacBook-Pro kasama % 
+
+(base) kasamayoshiki@kasamakichitakanoMacBook-Pro kasama % python find_election_winner.py
+過半数を取得した人はいませんでした。
 (base) kasamayoshiki@kasamakichitakanoMacBook-Pro kasama % 
 ```
 
+
+
 ## アルゴリズム
 
- ボイヤーとムーアのレポート
+### ボイヤーとムーアのレポート
+
+### listのsort()
