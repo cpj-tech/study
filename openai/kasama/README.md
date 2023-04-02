@@ -12,3 +12,9 @@ gpt-3.5-turbo を model として使用するには upgrade が必要そう
 ```
 pip install --upgrade pip
 ```
+
+実行文
+
+```cmd
+streamlit run app_chatgpt_test.py
+```
