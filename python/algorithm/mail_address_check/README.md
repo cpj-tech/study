@@ -46,8 +46,12 @@ kasamayoshiki@kasamakichitakanoMacBook-Pro NikkeiSW %
 - <img width="867" alt="image" src="https://github.com/cpj-tech/study/assets/61643054/834c968e-0f4d-4c4c-b450-be078ce418ef">
 - <img width="538" alt="image" src="https://github.com/cpj-tech/study/assets/61643054/639fcf08-d6ec-48a5-931a-7b723cf0271a">
 
-
 ### tips
 
 - python では re モジュールを用いて文字列が形式あっているか簡単に判定できますが、ここではアルゴリズムを理解するために re モジュールを使わずに手作りします。
 - python には isalnum 関数が用意されていますがあえて手作りします。
+
+## 発展系
+
+- プログラムの可読性が低くなる場合は、マジックナンバーに定数を割り当てる。
+- 郵便番号や電話番号などの形式をチェックするプログラムも試して見てね。
