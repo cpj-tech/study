@@ -1,5 +1,5 @@
 def is_valid_dot(input):
-    """ドットが 先頭 末尾 2連続続き だったら False"""
+    """ドットが 先頭 末尾 2連続 だったら False"""
     is_valid = True
     if input[0] == ".":
         is_valid = False
