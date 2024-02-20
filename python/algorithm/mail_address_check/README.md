@@ -41,7 +41,11 @@ kasamayoshiki@kasamakichitakanoMacBook-Pro NikkeiSW %
 
 ## アルゴリズム
 
-###
+### 参考画像
+
+- <img width="867" alt="image" src="https://github.com/cpj-tech/study/assets/61643054/834c968e-0f4d-4c4c-b450-be078ce418ef">
+- <img width="538" alt="image" src="https://github.com/cpj-tech/study/assets/61643054/639fcf08-d6ec-48a5-931a-7b723cf0271a">
+
 
 ### tips
 
