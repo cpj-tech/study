@@ -12,10 +12,11 @@
 - カゴの中には降りる階を指定する、1、2、3、4、5 というボタンがあり、[開]と[閉]のボタンはこれから作るアプリでは省略します。
 - 各階の乗り口には上昇を指定する[↑]ボタンと下降を指定する[↓]ボタンがあります。ただし、1 階は[↑]ボタンのみで、5 階は[↓]ボタンのみとします。
 - <img width="557" alt="image" src="https://github.com/cpj-tech/study/assets/61643054/32feec96-8c62-4773-b4ec-a8d16a118836">
-- 画面仕様の説明：
-  -
 
 ## 問題
+
+- <img width="500" alt="image" src="https://github.com/cpj-tech/study/assets/61643054/8ef9bbdd-39ec-4c0f-a2d0-fdf921d100f8">
+
 
 - direction_control 関数:
 
